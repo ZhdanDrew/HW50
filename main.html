@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .timer {
+            width: 450px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .timer .buttons-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="timer">
+        <h1 id="seconds">00:00:00:00</h1>
+
+        <div class="buttons-wrapper">
+            <button id="start-btn">Start</button>
+            <button id="stop-btn">Stop</button>
+            <button id="reset-btn">Reset</button>
+
+            <button id="increase-10">+10</button>
+            <button id="decrease-10">-10</button>
+        </div>
+    </div>
+    <div id="form-wrapper"></div>
+
+    <button id="reload">Reload the window</button>
+
+    <h1>Navigator manipulations</h1>
+    <input id="paste" type="text" />
+    <button id="copy">Copy</button>
+
+    <h1>Керування геолокацією</h1>
+    <button id="show-location">Показати моє місцезнаходження</button>
+    <p id="location-info"></p>
+
+    <script src="./main.js"></script>
+</body>
+</html>
